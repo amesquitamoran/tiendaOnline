@@ -5,11 +5,16 @@
                 display: block;
                 &__section{
                     margin-top: 6rem;
+                    text-align: center;
                     &__select{
                         &--p{
                             width: 30rem;
                         }
                     }
+                }
+                &__section2{
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
