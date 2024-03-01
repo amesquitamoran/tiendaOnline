@@ -1,0 +1,43 @@
+@media screen and (max-width: 1200px) {
+    .nav{
+        &__contenedor{
+            text-align: center;
+            &__logo{
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav{
+        &__contenedor{
+           justify-content: space-around;
+            #check:checked ~ ul{
+                left: 0;
+            }
+            &__logo{
+                text-align: center;
+            }
+            ul{/*aca mostramos la barra que se desliza cada ves que el boton esta en checked*/
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(83, 81, 81);
+                top: 8rem;
+                left: -100%;
+                display: block;
+                transition: all .5s;
+                li{
+                    padding-top: 5rem;
+                    a{
+                        padding: 2rem;
+                        font-size: 3rem;
+                    }
+                }
+            }
+            &__boton{
+                display: block;/*block para que el boton se vea*/
+            }
+        }
+    }
+}

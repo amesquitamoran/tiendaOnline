@@ -1,0 +1,42 @@
+.nav{
+    background-color: rgb(83, 81, 81);
+    &__contenedor{
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        &__boton{
+            font-size: 3rem;
+            color: $colorfuente;
+            padding-top: .5rem;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        &__logo{  
+            width: 23rem;
+            font-family: "Raleway", sans-serif;
+            font-size: 3rem;
+            color: $colorfuente;
+            margin-bottom: 1rem;
+            letter-spacing: .5rem;
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            a{
+                color: $colorfuente;
+                font-size: 2rem;
+                font-family: "Raleway", sans-serif;
+                font-weight: 100;
+            }
+            a:hover{
+                color: $colorfuente_hover;
+                transition: .2s ease 0s;
+            }
+        }
+    }
+}

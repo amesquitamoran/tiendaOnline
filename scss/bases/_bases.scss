@@ -1,0 +1,17 @@
+$colorfuente:rgb(211, 211, 211);
+$colorfuente_hover: rgb(162,194,201);
+$fuentePrimaria: "Raleway", sans-serif;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}

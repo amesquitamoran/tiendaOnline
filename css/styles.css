@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  background-color: rgb(83, 81, 81);
+}
+.nav__contenedor {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.nav__contenedor__boton {
+  font-size: 3rem;
+  color: rgb(211, 211, 211);
+  padding-top: 0.5rem;
+  cursor: pointer;
+  display: none;
+}
+.nav__contenedor #check {
+  display: none;
+}
+.nav__contenedor__logo {
+  width: 23rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  color: rgb(211, 211, 211);
+  margin-bottom: 1rem;
+  letter-spacing: 0.5rem;
+}
+.nav__contenedor ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__contenedor ul a {
+  color: rgb(211, 211, 211);
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+.nav__contenedor ul a:hover {
+  color: rgb(162, 194, 201);
+  transition: 0.2s ease 0s;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav__contenedor {
+    text-align: center;
+  }
+  .nav__contenedor__logo {
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__contenedor {
+    justify-content: space-around;
+  }
+  .nav__contenedor #check:checked ~ ul {
+    left: 0;
+  }
+  .nav__contenedor__logo {
+    text-align: center;
+  }
+  .nav__contenedor ul { /*aca mostramos la barra que se desliza cada ves que el boton esta en checked*/
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(83, 81, 81);
+    top: 8rem;
+    left: -100%;
+    display: block;
+    transition: all 0.5s;
+  }
+  .nav__contenedor ul li {
+    padding-top: 5rem;
+  }
+  .nav__contenedor ul li a {
+    padding: 2rem;
+    font-size: 3rem;
+  }
+  .nav__contenedor__boton {
+    display: block; /*block para que el boton se vea*/
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
