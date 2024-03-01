@@ -1,0 +1,47 @@
+.header{
+    background-image: url(../../img/portada.jpg);
+    background-size: cover;
+    padding-top: 22rem;
+    padding-bottom: 10rem;
+    &__contenedor{
+       max-width: 54.6rem;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: rgba(255,255,255,.3);
+       padding-bottom: 2rem;
+       h1{
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            font-size: 5.5rem;
+            text-align: center;
+            padding-top: 3rem;
+            color: $color_negrosuave;
+            letter-spacing: .5rem;
+       }
+       &__div{
+            width: 22rem;
+            background-color: $color_negrosuave;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            a{
+               text-align: center;
+               font-size: 2rem;
+               font-family: $fuentePrimaria;
+               font-weight: 100;
+               color: $colorblanco;
+               padding-top: 1rem;
+               padding-left: 7.2rem;
+               padding-right: 7.2rem;
+               padding-bottom: 1rem;
+            }
+            a:hover{
+                background-color: $colorblanco;
+                color: black;
+                transition: .3s ease 0s;
+            }
+       }
+    }
+}

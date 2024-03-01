@@ -16,6 +16,10 @@ ul, ol {
   list-style: none;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 .contenedor {
   max-width: 120rem;
   margin-left: auto;
@@ -103,6 +107,53 @@ ul, ol {
   .nav__contenedor__boton {
     display: block; /*block para que el boton se vea*/
   }
+}
+.header {
+  background-image: url(../../img/portada.jpg);
+  background-size: cover;
+  padding-top: 22rem;
+  padding-bottom: 10rem;
+}
+.header__contenedor {
+  max-width: 54.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-bottom: 2rem;
+}
+.header__contenedor h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  text-align: center;
+  padding-top: 3rem;
+  color: rgb(55, 55, 55);
+  letter-spacing: 0.5rem;
+}
+.header__contenedor__div {
+  width: 22rem;
+  background-color: rgb(55, 55, 55);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.header__contenedor__div a {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  color: white;
+  padding-top: 1rem;
+  padding-left: 7.2rem;
+  padding-right: 7.2rem;
+  padding-bottom: 1rem;
+}
+.header__contenedor__div a:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease 0s;
 }
 
 /*# sourceMappingURL=styles.css.map */

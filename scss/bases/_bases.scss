@@ -1,6 +1,9 @@
 $colorfuente:rgb(211, 211, 211);
 $colorfuente_hover: rgb(162,194,201);
 $fuentePrimaria: "Raleway", sans-serif;
+$colorblanco: white;
+$color_negrosuave: rgb(55, 55, 55);
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -14,4 +17,7 @@ a{
 }
 ul,ol{
     list-style: none;
+}
+h1,h2,h3,h4{
+    margin: 0;
 }
