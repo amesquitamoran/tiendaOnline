@@ -1,0 +1,17 @@
+@media screen and (max-width:970px) {
+    .main{
+        &__contenedor{
+            &__div{
+                display: block;
+                &__section{
+                    margin-top: 6rem;
+                    &__select{
+                        &--p{
+                            width: 30rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

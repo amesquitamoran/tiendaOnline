@@ -1,0 +1,76 @@
+.main{
+    &__contenedor{
+        padding-top: 7rem;
+        padding-bottom: 5rem;
+        h3{
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            letter-spacing: 1rem;
+            color: $color_negrosuave;
+            margin-bottom: 5rem;
+        }
+        hr{
+            width: 4%;
+            font-weight: 100;
+            margin-bottom: 5rem;
+        }
+        &--contenido{
+            font-size: 2rem;
+            text-align: center;
+            font-family: $fuentePrimaria;
+            font-weight: 300;
+            letter-spacing: 1rem;
+            margin-bottom: 7rem;
+        }
+        &__div{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            &__section{
+                width: 29.8rem;
+                height: 40.2rem;
+                &__select{
+                    background-color: $color_negrosuave;
+                    border: none;
+                    img{
+                        width: 29.9rem;
+                        height: 36.2rem;
+                    }
+                    &--p{
+                        width: 100%;
+                        background-color: $color_negrosuave;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        p{
+                            font-size: 1.6rem;
+                            text-transform: uppercase;
+                            font-family: $fuentePrimaria;
+                            text-align: center;
+                            color: white;
+                        }
+                    } 
+                }
+            }
+            &__section2{
+                background-image: url(../../img/cartera.jpg);
+                background-size: cover;
+                width: 29.8rem;
+                height: 40.2rem;
+                &--p{
+                    p{
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 5rem;
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin-top: 6rem;
+                        color: $color_negrosuave;
+                    }
+                }
+            }
+        }
+      
+        
+    }
+}
