@@ -1,0 +1,57 @@
+.footer{
+    background-color: rgb(51, 51, 51);
+    &__contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        &__conectado{
+            width: 29.8rem;
+            &--icono{
+                text-align: center;
+                margin-bottom: 17rem;
+                margin-top: 3rem;
+                margin-left: 1.5rem;
+                a{
+                    i{
+                        font-size: 1.8rem;
+                        color: white;
+                        letter-spacing: 2rem;
+                    }
+                }
+            }
+        }
+        &__escribenos{
+            width: 29.8rem;
+            &__input{
+                margin-top: 2rem;
+                &__1{
+                    background-color: rgb(77, 76, 76);
+                    color: white;
+                    font-size: 1.5rem;
+                    font-family: $fuentePrimaria;
+                    font-weight: 700;
+
+                }
+                &__1:hover{
+                    border: .2rem solid white;
+                }
+                &__2{
+                    margin-top: 1rem;
+                    font-size: 1.5rem;
+                    font-family: $fuentePrimaria;
+                    background-color: rgb(212, 209, 209);
+                    transition: all .3s;
+                }
+                &__2:hover{
+                    background-color: rgb(240, 238, 238);
+                    transition: all .3s;
+                }
+               
+            }
+        }
+        &__ayuda{
+            width: 29.8rem;
+        }
+    }
+}
