@@ -1,0 +1,39 @@
+.main2{
+    &__contenedor{
+        margin-top: 2rem;
+        padding-top: 2rem;
+        h3{
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: $fuentePrimaria;
+            letter-spacing: 1rem;
+        }
+        &__tienda{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2rem;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            &__section{
+                background-color: rgb(83, 81, 81);
+                padding: 1rem;
+                img{
+                    width: 100%;
+                }
+                p{
+                    font-size: 2rem;
+                    color: rgb(225, 222, 222);
+                    text-align: center;
+                    font-family: $fuentePrimaria;
+                    font-weight: 100;
+                    margin-top: 1rem;
+                    span{
+                        text-decoration: line-through;
+                        margin-right: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

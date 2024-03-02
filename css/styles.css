@@ -344,5 +344,54 @@ h1, h2, h3, h4 {
     margin-bottom: 2rem;
   }
 }
+/* seccion tienda */
+.main2__contenedor {
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+.main2__contenedor h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1rem;
+}
+.main2__contenedor__tienda {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.main2__contenedor__tienda__section {
+  background-color: rgb(83, 81, 81);
+  padding: 1rem;
+}
+.main2__contenedor__tienda__section img {
+  width: 100%;
+}
+.main2__contenedor__tienda__section p {
+  font-size: 2rem;
+  color: rgb(225, 222, 222);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+.main2__contenedor__tienda__section p span {
+  text-decoration: line-through;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main2__contenedor__tienda {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 468px) {
+  .main2__contenedor__tienda {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
