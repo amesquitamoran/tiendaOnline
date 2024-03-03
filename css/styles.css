@@ -51,6 +51,9 @@ h1, h2, h3, h4 {
 }
 
 .nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
   background-color: rgb(83, 81, 81);
 }
 .nav__contenedor {
@@ -223,12 +226,8 @@ h1, h2, h3, h4 {
   justify-content: center;
   gap: 2rem;
 }
-.main__contenedor__div__section__select {
-  background-color: rgb(55, 55, 55);
-  border: none;
-}
 .main__contenedor__div__section__select img {
-  width: 29.9rem;
+  width: 30.12rem;
   height: 36.2rem;
 }
 .main__contenedor__div__section__select--p {
@@ -236,6 +235,7 @@ h1, h2, h3, h4 {
   background-color: rgb(55, 55, 55);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-top: -0.4rem;
 }
 .main__contenedor__div__section__select--p p {
   font-size: 1.6rem;
@@ -358,7 +358,7 @@ h1, h2, h3, h4 {
 }
 .main2__contenedor__tienda {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr)); /* auto-fill para que se autocomplete */
   gap: 2rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -383,12 +383,13 @@ h1, h2, h3, h4 {
   margin-right: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .main2__contenedor__tienda {
-    grid-template-columns: repeat(2, 1fr);
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 360px) {
   .main2__contenedor__tienda {
     grid-template-columns: repeat(1, 1fr);
   }

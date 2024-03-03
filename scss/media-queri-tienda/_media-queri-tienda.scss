@@ -1,13 +1,14 @@
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
     .main2{
         &__contenedor{
             &__tienda{
-                grid-template-columns: repeat(2,1fr);
+                margin-left: 1rem;
+                margin-right: 1rem;
             }
         }
     }
 }
-@media screen and (max-width:468px) {
+@media screen and (max-width:360px) {
     .main2{
         &__contenedor{
             &__tienda{
