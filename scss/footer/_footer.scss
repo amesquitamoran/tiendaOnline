@@ -1,5 +1,14 @@
 .footer{
     background-color: rgb(51, 51, 51);
+    div:first-child{
+        .wt{
+            color: green;
+            font-size: 10rem;
+            right: 5rem;
+            bottom: 3rem;
+            position: fixed;
+        }
+    }
     &__contenedor{
         display: flex;
         flex-wrap: wrap;

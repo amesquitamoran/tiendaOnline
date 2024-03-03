@@ -1,0 +1,96 @@
+.main3{
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    &__contenedor{
+        &__producto{
+            display: flex;
+            gap: 5rem;
+            justify-content: center;
+           img{
+                max-width: 50rem;
+                height: 50vh; 
+            } 
+            &__informacion{
+                h3{
+                    font-size: 5rem;
+                    font-family: $fuentePrimaria;
+                    font-weight: 100;
+                }
+                span{
+                    font-size: 2rem;
+                    font-family: $fuentePrimaria;
+                    text-transform: uppercase;
+                    margin-bottom: 2rem;
+                    display: inline-block;
+                }
+                &--precio{
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                    font-family: $fuentePrimaria;
+                    font-weight: 100;
+                }
+                &__formulario{
+                    display: grid;
+                    /* grid-template-columns: repeat(2,1fr); */
+                    grid-template-columns: 20rem 20rem;
+                    /* justify-content: center; */
+                    gap: 2rem;
+                    &__select{
+                        font-size: 2rem;
+                        background-color: transparent;
+                        border: .1rem solid;
+                        padding: 1rem;
+                        font-family: $fuentePrimaria;
+                        font-weight: 100;
+                        appearance: none;
+                    }
+                    input[type="number"]{
+                        font-size: 2rem;
+                        padding: 1rem;
+                        font-family: $fuentePrimaria;
+                        font-weight: 100;
+                        background-color: transparent;
+                        border: .1rem solid;
+                        appearance: none;
+                    }
+                    input[type="submit"]{
+                        grid-column: 1/3;
+                        background-color: black;
+                        color: white;
+                        font-family: $fuentePrimaria;
+                        font-size: 1.8rem;
+                        text-transform: capitalize;
+                        font-weight: 100;
+                        border: none;
+                        padding: 1rem;
+                        transition: all .3s;
+                        margin-bottom: 5rem;
+                        cursor: pointer;
+                    }
+                    input[type="submit"]:hover{
+                        background-color: rgb(119, 117, 117);
+                        transition: all .3s;
+                    }   
+                }
+                h2{
+                    font-size: 1.8rem;
+                    font-family: $fuentePrimaria;
+                    font-weight: 200;
+                    text-transform: uppercase;
+                    padding-bottom: 2rem;
+                }
+                hr{
+                    margin-bottom: 5rem;
+                }
+                &__p{
+                    width: 65.5%;
+                    font-size: 1.8rem;
+                    font-family: $fuentePrimaria;
+                    font-weight: 200;
+                    padding-bottom: 5rem;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

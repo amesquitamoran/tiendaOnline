@@ -1,0 +1,80 @@
+@media screen and (max-width:1070px) {
+    .main3{
+        &__contenedor{
+            &__producto{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &__informacion{
+                    h3{
+                        text-align: center;
+                    }
+                    span{
+                        text-align: center;
+                        display: inline-block;
+                        width: 100%;
+                    }
+                    &--precio{
+                        text-align: center;
+                    }
+                    &__formulario{
+                        grid-template-columns: 20rem 20rem;
+                        justify-content: center;
+                    }
+                    h2{
+                        text-align: center;
+                    }
+                    &__p{
+                        width: 70%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }  
+            }
+        }
+    }
+}
+/* @media screen and (max-width:468px) {
+    .main3{
+        &__contenedor{
+            &__producto{
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 30rem;
+                    height: 30vh;
+                }
+                &__informacion{
+                    text-align: center;
+                    &__formulario{
+                        grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
+                        margin-left: 15rem;
+                    }
+                }
+                
+            }
+        }
+    }
+} */
+@media screen and (max-width:460px) {
+    .main3{
+        &__contenedor{
+            &__producto{
+                &__informacion{
+                    &__formulario{
+                        grid-template-columns: 15rem 15rem;
+                        justify-content: center;
+                        &__select{
+                            font-size: 1.8rem;
+                        }
+                    }
+                    &__p{
+                        max-width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+}
