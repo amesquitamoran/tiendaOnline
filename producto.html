@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carrito.css">
 </head>
 <body>
     <nav class="nav"><!-- inicio navegacion -->
@@ -25,23 +26,37 @@
                 <li><a href="oferta.html">Oferta</a></li>
                 <li><a href="atencionCliente.html">Atencion al cliente</a></li>
                 <li><a href="#">Distribuidores</a></li>
-                <li>
+                <li class="submenu" >
                     <a href="#">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div><span></span></div>
+                        <i class=" submenu fa-solid fa-cart-shopping"></i>
                     </a>
+                    <div id="carrito">           
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="vaciar-carrito">Vaciar Carrito</a>
+                    </div>
                 </li>
             </ul>
         </div>
     </nav><!-- fin navegacion -->
-    <main class="main3">
+    <main id="lista-productos" class="main3">
         <div class="main3__contenedor contenedor" >
             <div class="main3__contenedor__producto">
                 <img src="img/1.jpg" alt="">
                 <div class="main3__contenedor__producto__informacion" >
                     <h3>VueJs</h3>
                     <span>sku: 0001</span>
-                    <p class="main3__contenedor__producto__informacion--precio" >$19</p>
+                    <p class="main3__contenedor__producto__informacion--precio precio" >$19</p>
                     <form class="main3__contenedor__producto__informacion__formulario">
                         <select class="main3__contenedor__producto__informacion__formulario__select" >
                             <option value="" disabled="" selected>seleccionar talla</option>
@@ -52,7 +67,7 @@
                         </select>
                         <!-- <p>cantidad</p> -->
                         <input type="number" min="1">
-                        <input type="submit" value="agregar carrito">
+                        <input type="submit" value="agregar carrito" class="agregar-carrito" data-id="1" >
                     </form>
                     <h2>informacion del producto</h2>
                     <p class="main3__contenedor__producto__informacion__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, sit beatae. Rerum, animi. Voluptas nam alias harum rem quis adipisci nobis quia eos, dolorem ratione, pariatur, eius asperiores sed vel voluptatum sequi in ullam!</p>
@@ -94,5 +109,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,15 +1,15 @@
 @import "bases/bases";
 @import "constantes/constantes";
-@import "navegacion/navegacion";
-@import "media-queri-navegacion/media-queri";
-@import "portada/portada";
-@import "div-envios/div-envios";
-@import "contenido-principal/contenido-principal";
-@import "media-queri-contenido-principal/media-queri-contenido-principal";
-@import "footer/footer";
-@import "media-queri-footer/media-queri-footer";
+@import "layout/navegacion";
+@import "mediaqueris/media-queri";
+@import "layout/portada";
+@import "layout/div-envios";
+@import "layout/contenido-principal";
+@import "mediaqueris/media-queri-contenido-principal";
+@import "layout/footer";
+@import "mediaqueris/media-queri-footer";
 /* seccion tienda */
-@import "contenido-principal-tienda/contenido-principal-tienda";
-@import "media-queri-tienda/media-queri-tienda";
-@import "producto/producto";
-@import "media-queri-productos/media-queri-productos";
+@import "layout/contenido-principal-tienda";
+@import "mediaqueris/media-queri-tienda";
+@import "layout/producto";
+@import "mediaqueris/media-queri-productos";

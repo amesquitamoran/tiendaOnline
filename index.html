@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carrito.css">
 </head>
 <body>
     <nav class="nav"><!-- inicio navegacion -->
@@ -25,11 +26,26 @@
                 <li><a href="oferta.html">Oferta</a></li>
                 <li><a href="atencionCliente.html">Atencion al cliente</a></li>
                 <li><a href="#">Distribuidores</a></li>
-                <li>
+                <li class="submenu" >
                     <a href="#">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div><span></span></div>
+                        <i class=" submenu fa-solid fa-cart-shopping"></i>
                     </a>
+                    <div id="carrito">           
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="vaciar-carrito">Vaciar Carrito</a>
+                        <!-- <a href="#" id="vaciar-carrito" class="vaciar-carrito">Pagar Productos</a> -->
+                    </div>
                 </li>
             </ul>
         </div>

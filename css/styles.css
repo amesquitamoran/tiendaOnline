@@ -140,6 +140,7 @@ h1, h2, h3, h4 {
   background-size: cover;
   padding-top: 22rem;
   padding-bottom: 10rem;
+  margin-top: 8rem;
 }
 .header__contenedor {
   max-width: 54.6rem;
@@ -352,6 +353,9 @@ h1, h2, h3, h4 {
   }
 }
 /* seccion tienda */
+.main2 {
+  margin-top: 10rem;
+}
 .main2__contenedor {
   margin-top: 2rem;
   padding-top: 2rem;
