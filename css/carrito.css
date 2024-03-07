@@ -6,7 +6,7 @@
 }
 .submenu:hover #carrito{
     display: block;
-    width: 40rem;
+    width: 50rem;
     /* height: 60rem; */
     background-color: rgb(226, 225, 225);
     position: absolute;
@@ -24,6 +24,10 @@
 }
 th{
     font-weight: 100;
+    padding: 1rem;
+}
+#lista-carrito tbody{
+    margin-top: 10rem;
 }
 #vaciar-carrito{
     display: inline-block;

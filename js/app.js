@@ -21,6 +21,7 @@ function leerProductos(producto){
     const infoProducto = {
         img: producto.querySelector('img').src,
         nombreProducto: producto.querySelector('h3').textContent,
+        sku: producto.querySelector('.skunum').textContent,
         precio: producto.querySelector('.precio').textContent,
         id: producto.querySelector('.agregar-carrito').getAttribute('data-id'),
         cantidad:1
@@ -47,18 +48,25 @@ function leerProductos(producto){
 }
 
 function mostrarProductos(){
-
+    limpiarHtml()
     arrayProductos.forEach(producto=>{
         const fila = document.createElement('tr')
         fila.innerHTML = `
         <th>
-            <img src="${producto.img} width="500" ">
+            <img src="${producto.img}" width="100">
         </th>
         <th> ${producto.nombreProducto} </th>
+        <th> ${producto.sku} </th>
         <th> ${producto.precio} </th>
         <th> ${producto.cantidad} </th>
-
+        
         `
         contenedorCarrito.appendChild(fila)
     })
+}
+
+function limpiarHtml(){
+    while(contenedorCarrito.firstChild){
+        contenedorCarrito.removeChild(contenedorCarrito.firstChild)
+    }
 }
