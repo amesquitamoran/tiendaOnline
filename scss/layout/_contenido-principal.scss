@@ -33,13 +33,13 @@
                     img{
                         width: 30.12rem;
                         height: 36.2rem;
+                        display: block;
                     }
                     &--p{
                         width: 100%;
                         background-color: $color_negrosuave;
                         padding-top: 1rem;
                         padding-bottom: 1rem;
-                        margin-top: -.4rem;
                         p{
                             font-size: 1.6rem;
                             text-transform: uppercase;
